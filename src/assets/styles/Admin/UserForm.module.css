@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form div {
+  margin-bottom: 10px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.saveButton, .cancelButton {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.saveButton {
+  background-color: #0070f3;
+}
+
+.cancelButton {
+  background-color: #ccc;
+}

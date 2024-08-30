@@ -1,0 +1,62 @@
+.roleList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .roleItem {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .roleName {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .roleDescription {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .roleUsersAssigned,
+  .roleCreatedAt,
+  .rolePermissions {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 5px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .editButton,
+  .deleteButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .editButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .deleteButton {
+    background-color: #dc3545;
+  }
+  
+  .deleteButton:hover {
+    background-color: #a71d2a;
+  }
+  

@@ -1,0 +1,104 @@
+/* src/assets/styles/Staff/StaffPage.module.css */
+
+.container {
+    max-width: 1380px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+  }
+  
+  .teamHeadText {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    justify-content: center; /* Centrera innehållet horisontellt */
+    position: relative; /* För att position: absolute ska fungera för applySection */
+  }
+  
+  .staffContent {
+    flex: 1; /* Tillåt detta avsnitt att ta upp tillgängligt utrymme */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrera innehållet */
+  }
+  
+  .roleSection {
+    margin-bottom: 40px;
+    width: 100%; /* Ta hela bredden av föräldern */
+  }
+  
+  .roleHeading {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .responsiveContainerBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cardContainer {
+    width: 280px;
+    margin: 10px;
+  }
+  
+  .card {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px;
+  }
+  
+  .name {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  /* Stilar för Apply-ruta och knapp */
+  .applySection {
+    position: absolute; /* Placera applySection absolut inom contentWrapper */
+    width: 220px; /* Grundbredden på sektionen */
+    margin-top: 109px; /* Justera detta värde för att flytta ner rutan */
+    right: 0; /* Placera applySection till höger */
+    margin-right: 40px; /* Skapa ett mellanrum mellan applySection och höger kant */
+  }
+  
+  .applyBox {
+    width: 100%; /* Ta upp hela bredden av containern */
+    height: 200px; /* Höjd på rutan */
+    background-color: #f0f0f0; /* Bakgrundsfärg */
+    border: 1px solid #ccc; /* Kantlinje */
+    box-sizing: border-box; /* Inkludera padding och border i bredden */
+  }
+  
+  .applyButton {
+    width: 100%; /* Ta upp hela bredden av containern */
+    padding: 10px 0;
+    background-color: #007bff; /* Bakgrundsfärg på knappen */
+    color: #fff; /* Textfärg */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box; /* Inkludera padding och border i bredden */
+  }
+  

@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  height: 100vh; /* Höjden täcker hela viewporten */
+  background-color: darkslategray;
+  position: relative;
+}
+
+.mainWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px; /* Justera för topBar */
+  margin-left: 250px; /* Utrymme för sidebar */
+  overflow: hidden; /* Förhindra scrollning */
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Centrera innehållet horisontellt */
+  margin-right: 200px; /* För att skapa utrymme till höger om mainContent */
+  overflow: hidden; /* Förhindra scrollning */
+}
+
+.appealsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Justera maxbredd som du behöver */
+  box-sizing: border-box;
+  height: calc(100vh - 70px); /* Justera höjd så att den inte går utanför viewport */
+  overflow: hidden; /* Förhindra skrollning inom appealsContainer */
+}
+
+.appealsList {
+  overflow-y: auto; /* Lägg till scroll om det finns för mycket innehåll för höjd */
+}
+
+.noAppealsMessage {
+  text-align: center;
+  color: #fff;
+}
+
+.appealItem {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.colorBox {
+  width: 10px;
+  height: 100%;
+}
+
+.appealDetails {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.appealText {
+  display: block;
+}
+
+.grayedText {
+  color: #888;
+}
+
+.openAppealButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pageButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pageButton.activePage {
+  background-color: #005bb5;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.proofTextInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.proofSection {
+  margin-top: 20px;
+}
+
+.proofImages img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.proofVideos video {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.statusButtons {
+  margin-top: 20px;
+}
+
+.statusButtons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

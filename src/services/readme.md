@@ -1,0 +1,1 @@
+Service Layer: Används för att organisera API-anrop och affärslogik för olika delar av applikationen.

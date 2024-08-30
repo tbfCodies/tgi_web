@@ -1,0 +1,25 @@
+/* StatisticsCard.module.css */
+
+
+
+.card {
+    width: 300px; /* Justera bredden efter behov */
+    height: 200px; /* Justera höjden efter behov */
+    background-color: #252525;
+    border-radius: 8px;
+    color: #fff;
+    padding: 20px;
+    margin: 10px; /* Justera mellanrum mellan korten */
+    display: flex;
+    flex-direction: column; /* Behåll kolumnlayout för innehållet inuti kortet */
+    align-items: center;
+}
+
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 20px; /* Ändra textstorlek om nödvändigt */
+}

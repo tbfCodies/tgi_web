@@ -1,0 +1,5 @@
+src/pages/api/users/index.js: Hanterar förfrågningar som gäller flera användare. Exempelvis: Hämta alla användare eller skapa en ny användare.
+
+src/pages/api/users/[userId].js: Hanterar förfrågningar för en specifik användare baserat på userId. Exempelvis: Hämta detaljer, uppdatera eller ta bort en specifik användare.
+
+src/services/api/users.js: En klientfil för att göra API-anrop till de ovanstående API-rutterna. Denna fil används av React-komponenter för att hämta, skapa, uppdatera eller ta bort användare via HTTP-anrop.

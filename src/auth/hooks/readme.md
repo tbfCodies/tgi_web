@@ -1,0 +1,1 @@
+Hooks: Specialiserade funktioner för att hantera logik som ofta behövs, såsom autentisering, datahämtning, och paginering.

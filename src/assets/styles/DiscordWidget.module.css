@@ -1,0 +1,32 @@
+/* assets/styles/DiscordWidget.module.css */
+
+.discordWidget {
+    position: fixed; /* Fixera widgeten på sidan */
+    right: 20px;     /* Justera avståndet från höger kant */
+    bottom: 20px;    /* Placera lägre än statisticsContainer */
+    width: 250px;    /* Sätt en lämplig bredd för widgeten */
+    padding: 10px;   /* Lägg till lite padding för att ge utrymme inuti widgeten */
+    background-color: #4b4b4b; /* Bakgrundsfärg */
+    color: #fff;     /* Textfärg */
+    border-radius: 5px; /* Rundade hörn */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Skugga för lite djup */
+    z-index: 1000;   /* Se till att widgeten är ovanpå andra element */
+  }
+  
+  .discordWidget p, .discordWidget button {
+    margin: 5px 0;   /* Lägg till marginal för text och knappar */
+  }
+  
+  .discordWidget button {
+    background-color: #0070f3; /* Bakgrundsfärg för knappen */
+    color: #fff;     /* Textfärg för knappen */
+    border: none;    /* Ta bort standard kantlinje */
+    padding: 10px;   /* Lägg till padding inuti knappen */
+    border-radius: 5px; /* Rundade hörn för knappen */
+    cursor: pointer; /* Ändra muspekare till pekare på hover */
+  }
+
+  .discord iframe {
+    border: none; /* Tar bort standardramen runt iframen */
+  }
+  

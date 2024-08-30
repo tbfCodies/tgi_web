@@ -1,0 +1,54 @@
+/* src/assets/styles/AccountSettings.module.css */
+.settingsContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .settingsContainer h1 {
+    margin-top: 0;
+    font-size: 24px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .formGroup input[type="text"],
+  .formGroup input[type="email"],
+  .formGroup input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .formGroup input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .saveButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0070f3;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .saveButton:hover {
+    background-color: #005bb5;
+  }
+  

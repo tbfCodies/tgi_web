@@ -1,0 +1,99 @@
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between; /* Justera för att separera nav-list och profilsektion */
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1; /* Tillåter listan att växa och centrera sig */
+  justify-content: center; /* Centrera listan horisontellt */
+}
+
+.navItem {
+  margin: 0 15px;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navItem a:hover {
+  text-decoration: underline;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Justera efter behov */
+}
+
+.profileIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.userName {
+  color: white;
+  margin: 0 10px; /* Justera avståndet mellan profilbild och namn */
+  font-weight: bold;
+}
+
+.dropdownArrow {
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.loggedInMenu {
+  display: flex;
+  align-items: center;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.dropdownMenu a,
+.dropdownMenu button {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownMenu a:hover,
+.dropdownMenu button:hover {
+  background-color: #f0f0f0;
+}

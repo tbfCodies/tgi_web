@@ -1,0 +1,48 @@
+1. Definiera Roll- och Rättighetsstruktur
+
+Vi behöver särskilja åtkomst till AdminCP (huruvida en användare kan logga in och komma åt AdminCP) från de specifika rättigheter som styr vad en användare kan göra när de väl är inne i AdminCP.
+Rättigheter och Roller:
+
+    Grundläggande Åtkomst
+        accessAdminCP: Ger åtkomst till AdminCP, utan att ge några specifika funktioner.
+
+    Specifika Åtgärder i AdminCP
+        Användarhantering
+            viewUsers: Se användarlistan.
+            addUser: Lägg till användare.
+            editUser: Redigera användare.
+            deleteUser: Ta bort användare.
+            assignRolesToUsers: Tilldela roller till användare.
+        Rollhantering
+            viewRoles: Se roller.
+            createRoles: Skapa roller.
+            editRoles: Redigera roller.
+            deleteRoles: Ta bort roller.
+            changeRolePermissions: Ändra rättigheter för roller.
+        Appeals och Punishments
+            viewAppeals: Se appeals.
+            createAppeal: Skapa appeal.
+            editAppeal: Redigera appeal.
+            deleteAppeal: Ta bort appeal.
+            assignAppeal: Tilldela appeal.
+            viewPunishments: Se punishment.
+            createPunishment: Skapa punishment.
+            editPunishment: Redigera punishment.
+            deletePunishment: Ta bort punishment.
+            addEvidence: Lägg till bevis.
+            editEvidence: Redigera bevis.
+        Statistik och Loggar
+            viewStatistics: Se statistik.
+            viewLogs: Se loggar.
+        Inställningar och Konfiguration
+            configureSettings: Konfigurera inställningar.
+            manageCustomFields: Hantera anpassade fält.
+            manageThemeSettings: Hantera temainställningar.
+        API och Integrationer
+            manageAPIKeys: Hantera API-nycklar.
+            manageAPIEndpoints: Hantera API-endpoints.
+        Övrigt
+            manageAnnouncements: Hantera meddelanden.
+            sendAnnouncements: Skicka meddelanden.
+            manageReports: Hantera rapporter.
+            scheduleMaintenance: Schemalägga underhåll.

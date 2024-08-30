@@ -1,0 +1,26 @@
+Steg 3: Implementera Åtkomstkontroll
+
+    Åtkomstkontroll på Backend: Implementera server-side kontroller för att säkerställa att användare bara kan få tillgång till de funktioner och data som deras roll tillåter. Detta innebär att du kontrollerar åtkomsträttigheter innan du skickar data till frontend.
+
+    Kontrollera Rättigheter: Använd din roll- och rättighetsstruktur för att begränsa åtkomst. Exempelvis, om en användare inte har rättigheten manageUsers, ska de inte kunna se eller interagera med användarhanteringsmodulen.
+
+javascript
+
+// Exempel på server-side åtkomstkontroll
+function checkPermission(userRole, requiredPermission) {
+  const rolePermissions = roles[userRole].permissions;
+  return rolePermissions.includes(requiredPermission);
+}
+
+    Frontend Åtkomstkontroll: Dold eller visa gränssnittskomponenter baserat på användarens rättigheter. Om en användare inte har tillräckliga rättigheter för att skapa användare, ska inte knappen eller formuläret för att skapa användare vara synligt.
+
+javascript
+
+// Exempel på frontend åtkomstkontroll
+function renderAdminCP(userRole) {
+  if (checkPermission(userRole, 'manageUsers')) {
+    showUserManagementModule();
+  } else {
+    hideUserManagementModule();
+  }
+}

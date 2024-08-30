@@ -1,0 +1,19 @@
+/* src/assets/styles/Auth/LoginPage.module.css */
+
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Fullhöjd */
+    background-color: #eaeaea; /* Ljusgrå bakgrund för hela sidan */
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Maxbredd för inloggningsformuläret */
+    padding: 20px;
+  }
+  

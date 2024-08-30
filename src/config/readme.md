@@ -1,0 +1,1 @@
+Config: Håller centrala konfigurationsinställningar för API, appinställningar och teman osv.

@@ -1,0 +1,13 @@
+/* src/assets/styles/Shared/Statistics.module.css */
+
+.statisticsContainer {
+  position: fixed; /* Fäster elementet på en fast position på skärmen */
+  bottom: 80px; /* Placera ovanför Discord-widgeten */
+  left: 20px; /* Avstånd från vänster kant av skärmen */
+  padding: 10px; /* Padding för att skapa utrymme runt texten */
+  color: #fff; /* Vit textfärg för bra kontrast mot den mörka bakgrunden */
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Litet avstånd mellan statistiken */
+  z-index: 1001; /* Se till att statistiken ligger ovanpå Discord-widgeten */
+}

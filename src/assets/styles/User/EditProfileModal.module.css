@@ -1,0 +1,65 @@
+/* src/assets/styles/User/EditProfileModal.module.css */
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+}
+
+.cancelButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background-color: #e0e0e0;
+}

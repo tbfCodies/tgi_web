@@ -1,0 +1,37 @@
+.userList {
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto; /* För att möjliggöra horisontell scroll om tabellen blir för bred */
+  }
+  
+  .userList table {
+    width: 100%;
+    border-collapse: collapse; /* För att ta bort avståndet mellan cellgränserna */
+  }
+  
+  .userList th, .userList td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Öka padding för bättre läsbarhet */
+    text-align: left;
+  }
+  
+  .userList th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .userList tr {
+    border-bottom: 1px solid #ddd; /* Tydlig avskiljare mellan raderna */
+  }
+  
+  .userList tr:hover {
+    background-color: #f9f9f9; /* Bakgrundsfärg vid hover över rader */
+  }
+  
+  .userList img {
+    max-width: 50px; /* Justera beroende på din design */
+    border-radius: 50%; /* Runda av profilbilderna */
+  }
+  
+  /* Om du vill kan du här justera något som påverkar knappar eller andra element */
+  

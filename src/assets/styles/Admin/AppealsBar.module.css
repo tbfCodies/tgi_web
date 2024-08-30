@@ -1,0 +1,44 @@
+/* src/assets/styles/Admin/AppealsBar.module.css */
+
+.appealsBarWrapper {
+  margin-top: -25px; /* Justera utrymmet ovanför */
+  padding: 10px 0; /* Justera om det behövs */
+  display: flex;
+  justify-content: center; /* Centrera horisontellt */
+  margin-bottom: 5px; /* Utrymme mellan appeals bar och sökruta */
+}
+
+.appealsBar {
+  width: 100%; /* Fyller hela tillgängliga bredden */
+  max-width: 1200px; /* Maximal bredd för appeals bar, justera efter behov */
+  height: 40px;
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  position: relative; /* För att placera den relativt till sin wrapper */
+  z-index: 1000;
+}
+
+.appealsBarItem {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.appealsBarIcon {
+  margin-right: 8px;
+
+}
+.appealsBarItem:hover {
+  background-color: #646363;
+}
+
+.appealsBarItem.active {
+  background-color: #0070f3;
+  color: white;
+}
+
