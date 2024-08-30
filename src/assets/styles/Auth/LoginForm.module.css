@@ -1,6 +1,6 @@
 /* src/assets/styles/Auth/LoginForm.module.css */
 .container {
-  max-width: 400px;
+  max-width: 415px; /* ändrade i samtal orgi 400*/ 
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ddd;
