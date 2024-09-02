@@ -1,13 +1,32 @@
-/* src/assets/styles/Shared/Statistics.module.css */
-
 .statisticsContainer {
-  position: fixed; /* Fäster elementet på en fast position på skärmen */
-  bottom: 80px; /* Placera ovanför Discord-widgeten */
-  left: 20px; /* Avstånd från vänster kant av skärmen */
-  padding: 10px; /* Padding för att skapa utrymme runt texten */
-  color: #fff; /* Vit textfärg för bra kontrast mot den mörka bakgrunden */
+  position: absolute;
+  bottom: 140px; /* Placera nära nedre kanten av skärmen */
+  left: 20%; /* Centrera horisontellt */
+  transform: translateX(-50%); /* Justera för att behålla centrerad position */
+  display: flex;
+  justify-content: space-around; /* För att jämnt fördela utrymmet mellan statistiksektioner */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Lägg till en lätt genomskinlig bakgrund för bättre läsbarhet */
+  border-radius: 10px; /* Rundade hörn för en snyggare design */
+  color: #fff;
+  z-index: 1001;
+}
+
+.statistic {
   display: flex;
   flex-direction: column;
-  gap: 5px; /* Litet avstånd mellan statistiken */
-  z-index: 1001; /* Se till att statistiken ligger ovanpå Discord-widgeten */
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.statistic h3 {
+  margin: 0;
+  font-size: 1.5rem; /* Justera storleken på rubriken */
+}
+
+.statistic p {
+  margin: 0;
+  font-size: 2rem; /* Justera storleken på siffrorna */
+  font-weight: bold;
 }
