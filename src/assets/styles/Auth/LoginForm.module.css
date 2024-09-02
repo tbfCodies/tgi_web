@@ -1,8 +1,8 @@
 /* src/assets/styles/Auth/LoginForm.module.css */
 .container {
-  max-width: 415px; /* ändrade i samtal orgi 400*/ 
+  max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
@@ -24,4 +24,3 @@
   border-radius: 4px;
 }
 
-/* Ingen global selector här */

@@ -12,10 +12,15 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/StaffPage": [
+    "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/StaffPage.js"
+      "static/chunks/pages/index.js"
+    ],
+    "/Rules": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Rules.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
@@ -27,10 +32,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/admincp": [
+    "/login": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/admincp.js"
+      "static/chunks/pages/login.js"
     ]
   },
   "ampFirstPages": []
