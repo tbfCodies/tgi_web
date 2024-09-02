@@ -2,7 +2,7 @@
 
 .discordWidget {
   position: absolute;  /* Behåll positioneringen */
-  right: 323px;    
+  right: 15px;    
   bottom: 70px;    
   width: 329px;    /* Samma bredd som iframe */
   height: 331px;   /* Samma höjd som iframe */

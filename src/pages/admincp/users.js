@@ -11,7 +11,7 @@ const UsersPage = () => {
   const [selectedUser, setSelectedUser] = useState(null);
   const [status, setStatus] = useState('All');
   const [selectedUserIds, setSelectedUserIds] = useState([]);
-  const [activeTab, setActiveTab] = useState('users'); // Lägg till state för aktiv flik
+  const [activeTab, setActiveTab] = useState('users'); // State för aktiv flik
 
   useEffect(() => {
     setUsers(mockUsers);

@@ -1,7 +1,7 @@
 .statisticsContainer {
   position: absolute;
   bottom: 140px; /* Placera nära nedre kanten av skärmen */
-  left: 20%; /* Centrera horisontellt */
+  left: 16%; /* Centrera horisontellt */
   transform: translateX(-50%); /* Justera för att behålla centrerad position */
   display: flex;
   justify-content: space-around; /* För att jämnt fördela utrymmet mellan statistiksektioner */
