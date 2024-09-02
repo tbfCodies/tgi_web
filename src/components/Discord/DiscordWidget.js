@@ -8,7 +8,7 @@ const DiscordWidget = () => {
       <h2>Discord Status</h2>
       <div className="discord">
         <iframe
-          src="mylinktodiscord"
+          src="https://discord.com/widget?id=445694480205742083&theme=dark"
           width="350"
           height="500"
           allowtransparency="true"
