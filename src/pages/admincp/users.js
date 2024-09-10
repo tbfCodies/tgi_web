@@ -1,111 +1,74 @@
-import React, { useState, useEffect } from 'react';
+// src/pages/users.js
+import React, { useState } from 'react';
 import UserList from '../../components/Admin/UserList';
-import UserForm from '../../components/Admin/UserForm';
-import RoleList from '../../components/Admin/RolesList'; // Importera RoleList-komponent
-import mockUsers from '../../data/mockUsers';
+import RoleList from '../../components/Admin/RolesList'; // Om du har en sådan komponent
 import styles from '../../assets/styles/Admin/UsersPage.module.css';
+import mockUsers from '../../data/mockUsers'; // Mock data, om du har det
 
 const UsersPage = () => {
-  const [users, setUsers] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedUser, setSelectedUser] = useState(null);
-  const [status, setStatus] = useState('All');
+  const [activeView, setActiveView] = useState('users'); // Default view
+  const [users, setUsers] = useState(mockUsers); // Mock data or your user data
   const [selectedUserIds, setSelectedUserIds] = useState([]);
-  const [activeTab, setActiveTab] = useState('users'); // State för aktiv flik
-
-  useEffect(() => {
-    setUsers(mockUsers);
-  }, []);
-
-  const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
-  };
-
-  const handleStatusChange = (e) => {
-    setStatus(e.target.value);
-  };
-
-  const handleUserSave = (updatedUser) => {
-    if (selectedUser) {
-      // Uppdatera användare
-      setUsers(users.map(user => (user.id === updatedUser.id ? updatedUser : user)));
-    } else {
-      // Skapa ny användare
-      setUsers([...users, { id: users.length + 1, ...updatedUser }]);
-    }
-    setSelectedUser(null);
-  };
-
-  const handleUserCancel = () => {
-    setSelectedUser(null);
-  };
-
-  const handleUserDelete = (userId) => {
-    setUsers(users.filter(user => user.id !== userId));
-  };
 
   const handleSelect = (selectedIds) => {
     setSelectedUserIds(selectedIds);
   };
 
-  const filteredUsers = users.filter(user => {
-    return (
-      user.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
-      (status === 'All' || user.status === status)
-    );
-  });
+  const handleEdit = (user) => {
+    // Handle edit
+  };
+
+  const handleDelete = (userId) => {
+    // Handle delete
+  };
 
   return (
     <div className={styles.container}>
       <div className={styles.navigationButtons}>
         <button
-          className={`${styles.navButton} ${activeTab === 'users' ? styles.activeTab : ''}`}
-          onClick={() => setActiveTab('users')}
+          className={`${styles.navButton} ${activeView === 'users' ? styles.activeTab : ''}`}
+          onClick={() => setActiveView('users')}
         >
           Users
         </button>
         <button
-          className={`${styles.navButton} ${activeTab === 'roles' ? styles.activeTab : ''}`}
-          onClick={() => setActiveTab('roles')}
+          className={`${styles.navButton} ${activeView === 'roles' ? styles.activeTab : ''}`}
+          onClick={() => setActiveView('roles')}
         >
           Roles
         </button>
       </div>
       <div className={styles.content}>
-        {activeTab === 'users' && (
+        {activeView === 'users' ? (
           <>
             <div className={styles.header}>
-              <h1>Create a new user, customize users permissions, add roles to users, remove roles from users, add roles and customize permissions, and/or remove users from your application.</h1>
+              <h1>Manage Users</h1>
+              {/* Your search and user creation components here */}
               <div className={styles.searchContainer}>
-                <select className={styles.statusDropdown} value={status} onChange={handleStatusChange}>
-                  <option value="All">All</option>
-                  <option value="Active">Active</option>
-                  <option value="Inactive">Inactive</option>
-                </select>
                 <input
                   type="text"
-                  value={searchQuery}
-                  onChange={handleSearchChange}
                   placeholder="Search users"
                   className={styles.searchInput}
                 />
-                <button className={styles.createButton} onClick={() => setSelectedUser({})}>Create User</button>
+                <button className={styles.createButton}>
+                  Create User
+                </button>
               </div>
             </div>
-            {selectedUser ? (
-              <UserForm user={selectedUser} onSave={handleUserSave} onCancel={handleUserCancel} />
-            ) : (
-              <UserList
-                users={filteredUsers}
-                onEdit={setSelectedUser}
-                onDelete={handleUserDelete}
-                onSelect={handleSelect}
-              />
-            )}
+            <UserList 
+              users={users} 
+              onEdit={handleEdit} 
+              onDelete={handleDelete} 
+              onSelect={handleSelect} 
+            />
           </>
-        )}
-        {activeTab === 'roles' && (
-          <RoleList />
+        ) : (
+          <>
+            <div className={styles.header}>
+              <h1>Manage Roles</h1>
+            </div>
+            <RoleList />
+          </>
         )}
       </div>
     </div>
